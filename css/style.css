@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243,243,243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container-geral {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.container-esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.container-esquerda img {
+    height: 50rem;
+}
+
+.container-direita {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    height: 34rem;
+}
+
+.container-com-borda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.container-com-borda:nth-child(1) {
+    min-height: 19rem;
+}
+
+.logo-instagram {
+    height: 3rem;
+}
+
+.foto-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; 
+}
+
+.foto-perfil img {
+    height: 6rem;
+}
+
+.continue-instagram {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+.remover-instagram {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.outra-conta {
+    color: rgb(160,160,160);
+}
+
+.link-azul {
+    color: 0095f6;
+}
+
+.container-sem-borda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem;
+}
+.botao-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.botao-download:nth-child(1) {
+    background-image: url("../img/logo-appstore.jpg");
+}
+
+.botao-download:nth-child(2) {
+    background-image: url("../img/logo-googleplay.jpg");
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+    .container-geral {
+        width: 90%;
+    } 
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;;
+    }
+    
+    .container-geral {
+        width: 90%;
+    }
+
+    .container-esquerda {
+        display: none;
+    }
+
+    .container-direita {
+        width: 100%;
+    }
+
+    .container-com-borda {
+        border: 1px solid transparent;
+    }
+}
